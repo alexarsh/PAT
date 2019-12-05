@@ -10,7 +10,7 @@ def main():
 @app.route('/data')
 def data():
     data = {"timestamps": [], "hr": [], "br": [], "temp": [], "valence": [], "stress": [], "incident": []}
-    with open('csv/mock.csv', newline='') as csvfile:
+    with open('csv/data.csv', newline='') as csvfile:
         spamreader = csv.reader(csvfile, delimiter=',')
         for row in spamreader:
             try:
