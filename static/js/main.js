@@ -89,7 +89,8 @@ $( document ).ready(function() {
   let temp
 
   // Init video player
-  videojs('video').ready(function(){
+  var video = videojs('video')
+  video.ready(function(){
     this.on('timeupdate', function() {
       let current_time = parseInt(this.currentTime());
       if (current_time !== playback_time) {
@@ -161,5 +162,12 @@ $( document ).ready(function() {
     } else {
       $(".fa-frown").show()
     }
+
+    //Setting the incident markers
+    let markers_data = data.incident.map((v, i) => {if( v === "1" ) {return i}})
+    markers_data = markers_data.filter(v => v !== undefined)
+    markers = []
+    markers_data.forEach((m, i) => {markers.push({time: m, text: `Incident ${i + 1}`})})
+    video.markers({markerTip:{text: function(marker) {return marker.text;}},markers: markers});
   })
 });
