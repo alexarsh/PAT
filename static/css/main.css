@@ -5,6 +5,11 @@ body {
 .video-js {
   margin: 10px;
   display: inline-block;
+  box-shadow: 2px 2px 4px 5px grey;
+}
+
+.video-js .vjs-tech, .video-js .vjs-control, .vjs-big-play-button {
+  outline: none;
 }
 
 h2 {
@@ -77,13 +82,13 @@ h2:last-of-type {
   justify-items: center;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
+  background-color: lightsteelblue;
 }
 
 .footer #disclaimer-container > div {
   width: 200px !important;
-  height: 150px !important;
+  height: 120px !important;
   position: relative;
-  bottom: 10px;
 }
 
 .footer .ldBar-label {
@@ -96,7 +101,7 @@ h2:last-of-type {
 
 .footer i, .footer img {
   position: absolute;
-  top: 85px;
+  top: 72px;
   left: 84px;
 }
 
