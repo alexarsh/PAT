@@ -1,0 +1,108 @@
+body {
+  margin: 0px;
+}
+
+.video-js {
+  margin: 10px;
+  display: inline-block;
+}
+
+h2 {
+  display: inline-block;
+  margin: 0px;
+  margin-top: 30px;
+}
+
+h2:last-of-type {
+  position: absolute;
+  bottom: 0px;
+}
+.stress {
+  display: inline-block;
+  position: relative;
+  height: 689px;
+}
+
+.stress > div {
+  width: 30px;
+  position: absolute;
+  overflow: hidden;
+  left: 40px;
+}
+
+.high_stress {
+  /* margin-top: 30px; */
+  height: 0px;
+  background-color: red;
+}
+
+.low_stress {
+  top: 359px;
+  background-color: green;
+  /* background-color: white; */
+  height: 0px;
+}
+
+.face {
+  display: inline-block;
+  position: absolute;
+  top: 330px;
+  left: 1500px;
+}
+
+.face i {
+  display: none;
+}
+
+.face .fa-frown {
+  color: red;
+}
+
+.face .fa-meh {
+  color: grey;
+}
+
+.face .fa-smile {
+  color: green;
+}
+
+.footer {
+  height: 120px;
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
+  border-top: 1px solid black;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.footer > div {
+  width: 200px !important;
+  height: 150px !important;
+  position: relative;
+  bottom: 10px;
+}
+
+.footer .ldBar-label {
+  font-size: 24px;
+}
+
+.footer .ldBar-label:after {
+  content: "";
+}
+
+.footer > div > i, .footer > div > img {
+  position: absolute;
+  top: 85px;
+  left: 84px;
+}
+
+.footer > div > img {
+  left: 86px;
+}
+
+.footer > .temp > i {
+  left: 92px;
+}

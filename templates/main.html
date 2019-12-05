@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <title>Sofwerx</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <link href="static/css/video-js.css" rel="stylesheet" />
+    <link href="static/css/videojs.markers.min.css" rel="stylesheet" />
+    <link href="static/css/loading-bar.css" rel="stylesheet" />
+    <link href="static/css/main.css" rel="stylesheet" />
+
+    <script src="static/js/jquery-3.4.1.min.js"></script>
+    <script src="static/js/videojs-ie8.min.js"></script>
+    <script src="static/js/videojs-markers.min.js"></script>
+    <script src="static/js/loading-bar.js"></script>
+    <script src="static/js/fa.js"></script>
+    <script src="static/js/main.js"></script>
+  </head>
+  <body>
+    <video autoplay="" class="video-js vjs-default-skin" controls="" data-setup='{"width": 1280, "height": 720}' height="720" id="video" preload="auto" width="1280">
+      <source src="static/video/example.mp4" type="video/mp4"/>
+    </video>
+
+    <div class="stress">
+      <h2>High Stress</h2>
+      <div class="high_stress"></div>
+      <div class="low_stress"></div>
+      <h2>Low Stress</h2>
+    </div>
+
+    <div class="face">
+      <i class="fas fa-frown fa-4x"></i>
+      <i class="fas fa-meh fa-4x"></i>
+      <i class="fas fa-smile fa-4x"></i>
+    </div>
+
+    <div class="footer">
+      <div class="hr label-center" data-duration="1">
+        <i class="fas fa-heart fa-2x"></i>
+      </div>
+      <div class="br label-center" data-duration="1">
+        <img src="static/images/lungs.png">
+      </div>
+      <div class="temp label-center" data-duration="1">
+        <i class="fas fa-thermometer-half fa-2x"></i>
+      </div>
+    </div>
+
+    <script src="https://vjs.zencdn.net/7.5.5/video.js"></script>
+  </body>
+</html>
