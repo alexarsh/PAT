@@ -169,5 +169,16 @@ $( document ).ready(function() {
     markers = []
     markers_data.forEach((m, i) => {markers.push({time: m, text: `Incident ${i + 1}`})})
     video.markers({markerTip:{text: function(marker) {return marker.text;}},markers: markers});
+
+    //Hiding footer
+    $('#disclaimer-button').click(function() {
+      if ($('#disclaimer-container').css('display') === "grid") {
+        $('#disclaimer-container').hide()
+        $('#disclaimer-button').css("bottom", "0px")
+      } else {
+        $('#disclaimer-container').show()
+        $('#disclaimer-button').css("bottom", "120px")
+      }
+    })
   })
 });

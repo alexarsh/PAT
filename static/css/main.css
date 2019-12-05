@@ -67,9 +67,9 @@ h2:last-of-type {
   color: green;
 }
 
-.footer {
+.footer #disclaimer-container {
   height: 120px;
-  position: fixed;
+  position: absolute;
   bottom: 0%;
   width: 100%;
   border-top: 1px solid black;
@@ -79,7 +79,7 @@ h2:last-of-type {
   grid-template-rows: 1fr;
 }
 
-.footer > div {
+.footer #disclaimer-container > div {
   width: 200px !important;
   height: 150px !important;
   position: relative;
@@ -94,16 +94,29 @@ h2:last-of-type {
   content: "";
 }
 
-.footer > div > i, .footer > div > img {
+.footer i, .footer img {
   position: absolute;
   top: 85px;
   left: 84px;
 }
 
-.footer > div > img {
+.footer img {
   left: 86px;
 }
 
-.footer > .temp > i {
+.footer .temp > i {
   left: 92px;
+}
+
+#disclaimer-button {
+  position: absolute;
+  bottom: 120px;
+  background-color: grey;
+  display: inline-block;
+  margin: 0 auto;
+  outline: none;
+  cursor: pointer;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100px;
 }
