@@ -173,10 +173,10 @@ $( document ).ready(function() {
     //Hiding footer
     $('#disclaimer-button').click(function() {
       if ($('#disclaimer-container').css('display') === "grid") {
-        $('#disclaimer-container').hide()
+        $('#disclaimer-container').hide("slow")
         $('#disclaimer-button').css("bottom", "0px")
       } else {
-        $('#disclaimer-container').show()
+        $('#disclaimer-container').show("slow")
         $('#disclaimer-button').css("bottom", "120px")
       }
     })
